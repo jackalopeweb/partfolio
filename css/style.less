@@ -1,0 +1,69 @@
+// compress: true
+@import "vars";
+
+@font-face {
+font-family: "lato";
+font-style: normal;
+src: local("lato"),
+    url("../fonts/lato.ttf") format("ttf"),
+    url("../fonts/lato.woff") format("woff");
+
+}
+
+html {
+    height: 100%;
+    font-size: 18px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+    color: @black;
+    background: @grey;
+
+    &.no-scroll{
+        overflow: hidden;
+    }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+
+/*Vendor*/
+@import "vendor/slick";
+
+/*Block*/
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/search";
+@import "blocks/intro";
+@import "blocks/social";
+@import "blocks/btn";
+@import "blocks/works"; //для меню навигации сюда добавить стили для ссылок
+//@import "blocks/nav"; //для меню навигации (оно ломало флекс поэтому надо проверить)
+@import "blocks/partfolio";
+@import "blocks/work";
+@import "blocks/nav";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/modal-work";
+@import "blocks/modal-work__color";
+@import "blocks/burger";
+
+/*helpers*/
+@import "helpers/helpers";

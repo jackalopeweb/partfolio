@@ -1,0 +1,41 @@
+// main: ../style.less
+
+.social {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    padding: 0 auto;
+    margin-left: 25%;
+
+
+    @media @desktop{
+        margin-bottom: 35px;
+    }
+    
+    @media @smartphone{
+        margin-bottom: 35px;
+        margin-left: 15%;
+    }
+
+    @media @smartphonesm{
+        margin-left: 0;
+    }
+
+
+}
+
+.social__link {
+    text-decoration: none;
+    margin-right: 25px;
+    transition: transform .2s
+    linear;
+
+    @media @smartphonesm{
+        display: none;
+    }
+}
+
+.social__link:hover {
+    transform: 
+    translateY(-5px);
+}

@@ -1,0 +1,126 @@
+// main: ../style.less
+
+.intro {
+    padding-top: 5.5556rem;
+    //background: url("../img/bglep.png") right top no-repeat;
+    background-position: top right 10px;
+    
+    @media @tablet {
+        padding-top: 1px; /*отсутп сверху*/
+    }
+
+    @media @smartphone{
+        padding-top: 10px; /*отсутп сверху*/
+    }
+
+    @media @smartphonesm{
+        padding-top: 0; /*отсутп сверху*/
+    }
+}
+
+.intro__inner {
+    display: flex;
+    padding-top: 2.7778rem; /*отсутп сверху*/
+    padding-bottom: 3,3333rem;
+    position: relative;
+
+    @media @tablet {
+        flex-wrap: wrap;
+        padding-top: 2rem; /*отсутп сверху*/
+    }
+
+    @media @smartphone{
+        padding-top: 1.9998rem; /*отсутп сверху*/
+    }
+
+    @media @smartphonesm{
+        padding-top: 1rem; /*отсутп сверху*/
+    }
+
+}
+
+.intro__content {
+    width: 50%;
+
+    @media @smartphone{
+        width: 95%;
+        text-align: center;
+    }
+
+    @media @tphone{
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+.intro__photo {
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    @media @desktop {
+        width: 27.7778rem;
+        height: 100%;
+    }
+
+    @media @tablet{
+        width: 350px;
+        height: 100%;
+    }
+
+    @media @smartphone{
+        display: none;
+    }
+
+}
+
+
+.intro__subtitle {
+font-family: lato;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-size: 2.5rem;
+margin-bottom: 45px ;
+
+    @media @desktop{
+        font-size: 2rem;
+        margin-bottom: 35px;
+    }
+
+    @media @tablet{
+        font-size: 1.5rem;
+    }
+
+    @media @smartphonesm{
+        margin-bottom: 20px;
+    }
+    
+    @media @smartphonesmo{
+        font-size: 1rem;
+    }
+}
+
+.intro__txt {
+margin-bottom: 45px;
+font-size: 1rem;
+color: @black;
+
+@media @desktop{
+    margin-bottom: 35px;
+}
+
+@media @smartphonesm{
+    margin-bottom: 0;
+    
+}
+
+@media @smartphonesm{
+    font-size: 0.8889rem;
+}
+
+@media @smartphonesmo{
+    font-size: 0.7222rem;
+}
+}

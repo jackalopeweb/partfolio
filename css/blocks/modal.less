@@ -1,0 +1,79 @@
+// main: ../style.less
+
+.modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    overflow: auto;
+
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    &.show{
+        display: flex;    
+    }
+
+}
+
+.modal__dialog{
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    max-height: 600px;
+
+    margin: auto; /*по центру и там и там*/
+    position: relative;
+
+    background-color: #ffffff;
+
+    transform: rotateX(90deg);
+    transition: transform .2s linear;
+
+    @media @smartphone{
+        height: 100%;
+        max-height: 396px;
+    }
+
+}
+
+.modal-close{
+    width: 22px;
+    height: auto;
+    padding: 0;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+    position: absolute;
+    top: 2.2222rem;
+    right: 2.2222rem;
+    z-index: 1;
+
+    transition: transform .3s linear;
+
+    &:hover{
+        transform: rotate(180deg);
+    }
+
+    @media @tablet{
+        top: 1.9444rem;
+        right: 1.9444rem;
+    }
+
+    @media @tabletsm{
+        top: 1.6667rem;
+        right: 1.6667rem;
+    }
+
+    @media @surface{
+        top: 1rem;
+        right: 1rem;
+    }
+}

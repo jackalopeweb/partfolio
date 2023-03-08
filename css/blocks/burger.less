@@ -1,0 +1,68 @@
+// main: ../style.less
+
+.burger {
+    background: transparent;
+    border: 1px solid transparent;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+
+    display: none;
+
+    @media @smartphone{
+        display: block;
+    }
+  }
+  
+  .burger:focus {
+    outline-width: 0;
+  }
+  
+  
+  .bar-top{
+    border-radius: 8px;
+    height: 3px;
+    width: 25px;
+    margin-bottom: 6px;
+  }
+  
+  
+  .bar-bot{
+    border-radius: 8px;
+    height: 3px;
+    width: 18px;
+    left: 10px;
+    margin-bottom: 6px;
+  }
+  
+  .burger [class*='bar-'] {
+    background-color: @black;
+    display: block;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: .2s ease all;
+            transition: .2s ease all;
+    
+  }
+  
+  .burger .bar-bot {
+    margin-bottom: 0;
+  }
+  
+  .open .bar-top {
+    background-color: @dark;
+    -webkit-transform: rotate(5deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 23% 23%;
+            transform-origin: 23% 23%;
+  }
+
+  .open .bar-bot {
+    width: 25px;
+    background-color: @dark;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 23% 95%;
+            transform-origin: 23% 95%;
+  }

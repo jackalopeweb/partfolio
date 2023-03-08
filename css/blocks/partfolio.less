@@ -1,0 +1,122 @@
+// main: ../style.less
+
+.contaynerPF{
+  flex: 1 0 auto;
+  max-width: 1800px;
+  margin: 0;
+}
+
+.partfolio  {
+  display: flex; //ломается при сортировке 
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.partfolio-nav {
+    flex-basis: 25%;
+
+
+  @media @tablet {
+    flex-basis: 33.33334%;    
+  }
+
+  @media @tphone {
+    flex-basis: 50%;
+  }
+
+  @media @smartphonesm {
+    flex-basis: 100%;    
+  }
+
+}
+
+.pf-img{
+display: block;
+max-width: 100%;
+height: auto; /*вроде для адаптивной картинки*/
+text-align: center;
+color: @dark; 
+position: relative;
+cursor: pointer;
+}
+
+.pf-title,
+.pf-img:after{
+width: 100%;
+position: absolute; /*как исправить*/
+bottom: 240px;
+left: 0;
+
+
+@media @desktop {
+  font-size: .8333rem;
+  }
+
+}
+
+.pf-img:after{
+content:'';
+height: 100%;
+top: 0px;
+transition: .5s;
+}
+
+.pf-img:hover:after{
+  background: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(8px);
+
+  @media @smartphone {
+    backdrop-filter: blur(6px);
+    }
+}
+
+.pf-title{
+padding: 105px;
+margin-bottom: 0;
+bottom: 0;
+transition: all .5 cubic-bezier(.13,.62,.81,.91) 0s;
+z-index: 1;
+opacity:0; /*Элемент полностью прозрачный невидимый*/
+transition: .5s;
+transform: translateY(20px);
+
+
+@media @desktop {
+  padding: 40px;
+}
+
+@media @tablet{
+  padding: 40px;
+}
+
+@media @smartphone {
+  padding: 50px;
+}
+
+@media @tphone{
+  padding: 40px;
+}
+
+@media @smartphonesmo{
+  padding: 70px;
+}
+}
+
+h3 b{
+ font-family: lato; 
+}
+
+.pf-img:hover .pf-title{
+opacity:1;
+transition: .5s;
+transform: translateY(0);
+}
+
+
+/*для того что бы все значения были одинаковы*/
+.im{ 
+  display: block;
+  margin: 0 auto;
+  width: 450px;
+  height: 265px;
+}

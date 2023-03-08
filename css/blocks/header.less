@@ -1,0 +1,37 @@
+// main: ../style.less
+
+.header {
+    flex: 0 0 auto;
+    position: sticky;
+    top: 0px;
+    padding: 1rem 0;
+    position: relative;
+    position: sticky;
+    background-color: @grey;
+    z-index: 999;
+
+    @media @smartphone{
+        padding: 1rem 0 1rem ; /*отсутп сверху*/
+    }
+
+}
+
+.header__inner  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    max-width: 1350px;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+
+
+.active{
+background-color: aqua;
+}

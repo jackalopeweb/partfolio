@@ -1,0 +1,59 @@
+// main: ../style.less
+
+.logo {
+    display: flex;
+}
+
+.logo__user {    
+    @media @tphone{
+    display: none;
+    }
+}
+
+
+.logo__usersm{
+    display: none;
+
+    @media @tphone{
+        display: contents;
+        }
+}
+
+.padding{
+    padding-left: 4px;
+    padding-top: 17px;
+
+    @media @tphone{
+        padding-top: 10px;
+        }
+}
+
+.logo__txt {
+    width: 68px;
+    height: 100%;
+
+    @media @tphone{
+        display: none;
+    }
+}
+
+.logotb {
+    @media @smartphonesm{
+        display: none;}
+}
+
+
+.logo__txtsm{
+    display: none;
+
+    @media @tphone{
+        padding-left: 4px;
+        margin-left: 10px;
+        display: contents;
+        }
+
+        @media @smartphonesm{
+            display: none;
+        }
+
+}

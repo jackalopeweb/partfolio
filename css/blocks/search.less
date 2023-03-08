@@ -1,0 +1,95 @@
+// main: ../style.less
+
+.search {
+display: inline-flex ;
+padding: 0 15px;
+justify-content: space-between;
+align-items: center;
+height: 2.7778rem;
+width: 13.8889rem;
+border-radius: 0px 100px 0px 100px;
+background-color: @grey;
+box-shadow: inset  0px 0px  10px @black;
+
+transition: all .5s;
+
+  @media @tablet{
+    height: 2.5rem;
+    width: 12.7778rem;
+  } 
+
+  @media @tabletsm{
+    width: 200px;
+  }
+  
+
+  @media @smartphonesm{
+    height: 40px;
+    width: 190px;
+  }
+
+  @media @smartphonesmo{
+    height: 35px;
+    width: 160px;
+  }
+
+}
+
+
+.gradient{
+  box-shadow: inset  0px 0px  0px @black;
+
+}
+
+input::placeholder {
+  color: @black;
+}
+
+
+.search__txt {
+border: none;
+width: 200px;
+outline: none;
+font-size: 1rem;
+padding-right: 40px;
+background-color: transparent;
+color: @dark;
+
+@media @tabletsm{
+  font-size: 0.8889rem;
+  width: 150px;
+}
+
+@media @smartphonesm{
+    font-size: 0.7222rem;
+    width: 150px;
+  }
+
+@media @smartphonesmo{
+    font-size: 0.7222rem;
+}
+}
+
+.search__btn {
+    border: none;
+    background-color: transparent;
+}
+
+.search__image {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background-color: transparent;
+    cursor: pointer;
+
+    @media @smartphonesm{
+        height: 16px;
+        width: 16px;
+    }
+
+    @media @smartphonesmo{
+        height: 13px;
+        width: 13px;
+    }
+
+}

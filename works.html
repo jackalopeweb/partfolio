@@ -10,12 +10,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"> </script>
 </head>
 
-<body>
-
+<body class="hi">
+    
+<!--cursor-->
+<div class="cursor"></div>
+<div class="cursor2"></div>
 
 <!--header-->
 <header class="header">
-    <div class="container">
+    <div class="container_header">
         <div class="header__inner">
     
         <a class="logo" href="/partfolio/index.html">
@@ -45,12 +48,12 @@
             <a class="works__nav-link" href="#" data-filter="logo">логотипы</a>
         </nav>
     
-        <div class="search">
+        <a class="search">
             <button class="search__btn">
             <img class="search__image" src="img/search.svg" alt="image">
             </button> 
             <input class="search__txt" type="text" placeholder="поиск" id="input">
-        </div>
+        </a>
         
         <button class="burger" type="button" id="navToggle">
             <span class="bar-top"></span>
@@ -66,17 +69,27 @@
     
     <div class="partfolio">
 
-        <div class="partfolio-nav" data-cat="website">
+        <a class="partfolio-nav" href="" data-cat="website">
+            <div class="pf-img">
+                <img class="img" src="img/pf/pf4.png" href="#">
+                    <div class="pf-title">
+                        <b>electric scooter shop</b>
+                        <br>сайт<br>
+                    </div>
+            </div>
+        </a>
+        
+        <a class="partfolio-nav" href="/partfolio/BoatRockerz450.html" data-cat="website">
             <div class="pf-img">
                 <img class="img" src="img/pf/pf3.png" href="#">
                     <div class="pf-title">
                         <b>headphones boat rockerz 450</b>
-                        <br>веб-сайт<br>
+                        <br>сайт<br>
                     </div>
             </div>
-         </div>
+        </a>
 
-        <div class="partfolio-nav" data-cat="ill" data-modal="#modal__project_2">
+        <a class="partfolio-nav" data-cat="ill" data-modal="#modal__project_2">
             <div class="pf-img">
                 <img class="img" src="img/pf/pf2.png" href="#">
                     <div class="pf-title">
@@ -84,19 +97,9 @@
                         <br>иллюстрация<br>
                     </div>
             </div>
-        </div>
+        </a>
 
-        <div class="partfolio-nav" data-cat="ill" data-modal="#modal__project_2">
-            <div class="pf-img">
-                <img class="img" src="img/pf/pf2.png" href="#">
-                    <div class="pf-title">
-                        <b>404</b>
-                        <br>иллюстрация<br>
-                    </div>
-            </div>
-        </div>
-
-        <div class="partfolio-nav" data-cat="logo" data-modal="#modal__project_1">
+        <a class="partfolio-nav" data-cat="logo" data-modal="#modal__project_1">
             <div class="pf-img" >
                 <img class="img" src="img/pf/pf1.png" href="#">
                     <div class="pf-title">
@@ -104,17 +107,7 @@
                         <br>логотип<br>
                     </div>
             </div>
-        </div>
-
-        <div class="partfolio-nav" data-cat="website">
-            <div class="pf-img" >
-                <img class="img" src="img/pf/pf3.png" href="#">
-                    <div class="pf-title">
-                        <b>headphones boat rockerz 450</b>
-                        <br>веб-сайт<br>
-                    </div>
-            </div>
-        </div>
+        </a>
              
     </div> <!-- partfolio -->
 
@@ -124,12 +117,12 @@
 
 
 <div class="footer">
-    <div class="container">
+    <div class="container_header">
 
         <div class="footer__inner">
             <div class="footer__credits">
                 <div class="footer__copyright">
-                &copy; 2023 jakalope web
+                &copy; 2023 jakalope web Alpha version 0.5
                 </div>                   
             </div>
 
@@ -146,7 +139,7 @@
                     <img src="img/icongr/ptgr.svg" width="19" alt="">
                 </a>    
                 
-                <a href="" class="social__linkgr" target="_blank">
+                <a href="https://vk.com/jackalopeart" class="social__linkgr" target="_blank">
                     <img src="img/icongr/vkgr.svg" height="15" alt="">
                 </a>
             </div>
@@ -182,38 +175,31 @@
 
             <div class="modal-work__content">
 
-                <div class="modal-work__header">404 error</div><!--modal-work__title--> 
+                <div class="modal-work__header pgtitle2">404 error</div><!--modal-work__title--> 
                 
-                <div class="modal_txt">
-                    <div class="modal-work__category">логотип</div><!--modal-work__client-->
-
-                    <div class="modal-work__year">2018</div><!--modal-work__text-->
-
-                    <div class="modal-work__text"> 
-                        Luam, pariatur ipr ipsum nesciunt rerum. Excepturi ratione blanditiisLLorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aspernatur aliquam praesentium aperiam quam,.
+                <div class="modal_txt pg2">
+                    <div class="modal__text"> 
+                        <p>иллюстрация</p>
+                        <p>2020</p>
+                        <p>иллюстрации были созданы для программы 1с база знаний в качестве заглушек под разные сценарии
                     </div>
                 </div>
 
-                <div class="modal-work__color"><!--modal-work__text--> 
+                <div class="modal-work__color pg2"><!--modal-work__text--> 
                    
                     <div class="leaf">
                         <img class="box img" src="img/partfolio/2work/color1.png" alt="">
-                        <div class="palette" >#0A3152</div>
+                        <div class="palette" >#F55F44</div>
                     </div>
 
                     <div class="leaf">
                         <img class="box img" src="img/partfolio/2work/color2.png" alt="">
-                        <div class="palette" >#137076</div>
+                        <div class="palette" >#FF7D04</div>
                     </div>
 
                     <div class="leaf">
                         <img class="box img" src="img/partfolio/2work/color3.png" alt="">
-                        <div class="palette" >#1D9A6D</div>
-                    </div>
-
-                    <div class="leaf">
-                        <img class="box img" src="img/partfolio/2work/color4.png" alt="">
-                        <div class="palette" >#DEEDCF</div>
+                        <div class="palette" >#FFDE00</div>
                     </div>
                     
                 </div>
@@ -250,14 +236,12 @@
             </div>
             <div class="modal-work__content">
 
-                <div class="modal-work__header">jakalope</div>
+                <div class="modal-work__header pgtitle1">jakalope</div>
 
-                <div class="modal-work__category">логотип</div>
-
-                <div class="modal-work__year">2018</div>
-
-                <div class="modal-work__text"> 
-                    Luam, pariatur ipr ipsum nesciunt rerum. Excepturi ratione blanditiisLLorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aspernatur aliquam praesentium aperiam quam,.
+                <div class="modal__text pg1"> 
+                <p>логотип</p>
+                <p>2020</p>
+                <p></p> логотип моей студии, разработанный с использованием правила золотого сечения.<br>p.s.хотел использовать оленя в качестве логотипа, но в фотографиях животных, попался рогатый зайка^^
                 </div>
 
                 <div class="modal-work__color"><!--modal-work__text--> 

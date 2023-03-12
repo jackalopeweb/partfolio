@@ -2,20 +2,12 @@
 
 .intro {
     padding-top: 5.5556rem;
-    //background: url("../img/bglep.png") right top no-repeat;
-    background-position: top right 10px;
-    
+   
     @media @tablet {
-        padding-top: 1px; /*отсутп сверху*/
+        padding-top: 5rem; /*отсутп сверху*/
     }
 
-    @media @smartphone{
-        padding-top: 10px; /*отсутп сверху*/
-    }
 
-    @media @smartphonesm{
-        padding-top: 0; /*отсутп сверху*/
-    }
 }
 
 .intro__inner {
@@ -39,65 +31,112 @@
 
 }
 
-.intro__content {
+.intro__content {    
     width: 50%;
 
     @media @smartphone{
-        width: 95%;
+        width: 100%;
         text-align: center;
     }
 
     @media @tphone{
-        max-width: 500px;
         width: 100%;
         text-align: center;
     }
 
 }
 
-.intro__photo {
-    bottom: 0;
-    right: 0;
-    z-index: 1;
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+.Ill{
+    position: absolute;
+    z-index: -1;
+    width: 38.6667rem;
+    height: auto;
 
     @media @desktop {
-        width: 27.7778rem;
-        height: 100%;
+        width: 33.333rem;
+        height: auto;
     }
 
-    @media @tablet{
-        width: 350px;
-        height: 100%;
+    @media @tablet {
+        width: 25rem;
+        height: auto;
     }
 
-    @media @smartphone{
-        display: none;
+    @media @tabletsm{
+        width: 22.222rem;
+        height: auto;
+    }
+
+    @media @smartphone {
+        display: none;        
     }
 
 }
 
+.Lamp{
+    position: absolute;
+    z-index: 2;
+    width: 38.6667rem;
+    height: auto;
+
+    @media @desktop {
+        width: 33.333rem;
+        height: auto;
+    }
+
+    @media @tablet {
+        width: 25rem;
+        height: auto;
+    }
+
+    @media @tabletsm{
+        width: 22.222rem;
+        height: auto;
+    }
+
+
+    @media @smartphone {
+        display: none;        
+    }
+}
 
 .intro__subtitle {
+font-family: "Lato Regular";
 text-transform: uppercase;
 letter-spacing: 1px;
 font-size: 2.5rem;
-margin-bottom: 45px ;
+margin: 2.5rem 0;
+color: @grey;
+-webkit-text-stroke: 2px @black;
 
     @media @desktop{
         font-size: 2rem;
-        margin-bottom: 35px;
+        margin-bottom: 1.9444rem;
     }
 
     @media @tablet{
         font-size: 1.5rem;
+        -webkit-text-stroke: 1.5px @black;
     }
 
     @media @smartphonesm{
+        font-size: 1.1111rem;
         margin-bottom: 20px;
+        -webkit-text-stroke: 1px @black;
     }
     
     @media @smartphonesmo{
-        font-size: 1rem;
+        font-size: 1.1111rem;
     }
 }
 
@@ -111,15 +150,9 @@ color: @black;
 }
 
 @media @smartphonesm{
-    margin-bottom: 0;
-    
-}
-
-@media @smartphonesm{
-    font-size: 0.8889rem;
-}
-
-@media @smartphonesmo{
+    margin-bottom: 0;   
     font-size: 0.7222rem;
 }
+
+
 }

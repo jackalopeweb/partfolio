@@ -1,0 +1,118 @@
+// main: ../style.less
+
+i {
+  border: solid @footer;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 9px;
+  margin-left: 0.7778rem;
+  margin-top: 1rem;
+
+  @media @tphone{
+    border-width: 0 2.5px 2.5px 0;
+    padding: 6px;
+    margin-top: .8333rem;
+    margin-left: 0.7222rem;
+  }
+
+  @media @smartphonesm{
+    border-width: 0 2px 2px 0;
+    padding: 6px;
+    margin-top: .7222rem;
+    margin-left: 0.6111rem;
+  }
+
+}
+
+.icolor {
+  border: solid @grey;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 9px;
+  margin-left: 0.7778rem;
+  margin-top: 1rem;
+
+  @media @tphone{
+    border-width: 0 2.5px 2.5px 0;
+    padding: 6px;
+    margin-top: .8333rem;
+    margin-left: 0.7222rem;
+  }
+
+  @media @smartphonesm{
+    border-width: 0 2px 2px 0;
+    padding: 6px;
+    margin-top: .7222rem;
+    margin-left: 0.6111rem;
+  }
+
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+  
+.btn-up {
+    display: inline-block;
+    width: 2.7778rem;
+    height: 2.7778rem;
+    border-radius: 2.7778rem;
+    position: fixed;
+    bottom: 1.6667rem;
+    right: 4.1667rem;
+    background-color: @grey;
+    box-shadow: 0px 0px  5px @black, 
+    0px 0px  15px @black,
+    0px 0px  20px @black;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    transition: background-color .2s linear, 
+    color .2s linear, box-shadow .2s linear,
+    opacity .5s, visibility .5s;;
+ 
+@media @pr0{
+  bottom: 4.3333rem;
+}
+  
+
+  @media @desktop {
+    right: 1rem;
+  }
+
+  @media @pr1{
+    right: 1rem;
+  }
+
+
+  @media @tphone{
+    width: 2.22222rem;
+    height: 2.22222rem;
+  }
+
+
+  @media @smartphonesm{
+    bottom: 5.3333rem;
+    width: 1.9444rem;
+    height: 1.9444rem;
+
+    box-shadow: 0px 0px  4px @black, 
+    0px 0px  14px @black,
+    0px 0px  19px @black;
+  }
+
+
+  }
+
+  .btn-up:hover {
+    background-color: @footer;
+    box-shadow: none;
+   }
+
+
+  .btn-up.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  

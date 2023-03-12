@@ -1,12 +1,12 @@
 // main: ../style.less
 
 .header {
-    flex: 0 0 auto;
-    position: sticky;
-    top: 0px;
-    padding: 1rem 0;
-    position: relative;
-    position: sticky;
+    top: 0;
+    padding: 0.77777rem 0;
+    position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	transition: all .3s ease;
     background-color: @grey;
     z-index: 999;
 
@@ -22,16 +22,31 @@
     align-items: center;
 }
 
-.container{
-    max-width: 1350px;
-    width: 100%;
+.container_header{
+    max-width: 75rem;
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 0 auto;
 }
 
+.header.out {
+	transform: translateY(-100%);
+}
 
+.nameh1{
+    font-size: 1.3333rem;
+    color: @black;
+    text-transform: uppercase;
 
-.active{
-background-color: aqua;
+    @media @smartphone{
+        font-size: 0.8889rem;
+    }
+}
+
+.years{
+    color: @black;
+
+    @media @smartphone{
+        font-size: 0.8889rem;
+    }
 }

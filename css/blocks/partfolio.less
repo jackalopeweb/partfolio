@@ -2,14 +2,15 @@
 
 .contaynerPF{
   flex: 1 0 auto;
-  max-width: 1800px;
-  margin: 0;
+  padding-top: 4.3333rem;
+  max-width: 100rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .partfolio  {
-  display: flex; //ломается при сортировке 
-  flex-wrap: wrap;
-  margin: 0;
+  display: flex; 
+  flex-wrap: wrap;  
 }
 
 .partfolio-nav {
@@ -37,13 +38,12 @@ height: auto; /*вроде для адаптивной картинки*/
 text-align: center;
 color: @dark; 
 position: relative;
-cursor: pointer;
 }
 
 .pf-title,
 .pf-img:after{
 width: 100%;
-position: absolute; /*как исправить*/
+position: absolute;
 bottom: 240px;
 left: 0;
 
@@ -85,8 +85,20 @@ transform: translateY(20px);
   padding: 40px;
 }
 
+@media @pr1{
+  padding: 80px;
+}
+
 @media @tablet{
-  padding: 40px;
+  padding: 70px;
+}
+
+@media @pr2{
+  padding: 70px;
+}
+
+@media @tabletsm{
+  padding: 60px;
 }
 
 @media @smartphone {
@@ -94,12 +106,21 @@ transform: translateY(20px);
 }
 
 @media @tphone{
-  padding: 40px;
+  padding: 100px;
+}
+
+@media @surface{
+  padding: 60px;
+}
+
+@media @smartphonesm{
+  padding: 100px;
 }
 
 @media @smartphonesmo{
-  padding: 70px;
+  padding: 90px;
 }
+
 }
 
 h3 b{
@@ -119,4 +140,9 @@ transform: translateY(0);
   margin: 0 auto;
   width: 450px;
   height: 265px;
+}
+
+
+.op{
+  padding: 1rem;
 }

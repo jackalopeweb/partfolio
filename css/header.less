@@ -1,0 +1,52 @@
+// main: ../style.less
+
+.header {
+    top: 0;
+    padding: 0.77777rem 0;
+    position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	transition: all .3s ease;
+    background-color: @grey;
+    z-index: 999;
+
+    @media @smartphone{
+        padding: 1rem 0 1rem ; /*отсутп сверху*/
+    }
+
+}
+
+.header__inner  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_header{
+    max-width: 75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+.header.out {
+	transform: translateY(-100%);
+}
+
+.nameh1{
+    font-size: 1.3333rem;
+    color: @dark;
+    text-transform: uppercase;
+
+    @media @smartphone{
+        font-size: 0.8889rem;
+    }
+}
+
+.years{
+    color: @black;
+
+    @media @smartphone{
+        font-size: 0.8889rem;
+    }
+}

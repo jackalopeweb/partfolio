@@ -1,0 +1,101 @@
+// main: ../style.less
+.modal-work{
+    display: flex;
+    background-color: white;
+    
+
+    @media @smartphonesm{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+.modal-work__preview{
+width: 33.8889rem;
+height: 33.3333rem;
+position: relative;
+overflow: hidden;
+
+@media @smartphone{
+    width: 22.2222rem;
+    height: 22rem;
+}
+
+@media @smartphonesm{
+    width: 26.2222rem;
+    height: 22rem;
+}
+
+}
+
+.modal-work__photo{
+position: absolute;
+top: 50%;
+left: 50%;
+z-index: 1;
+
+transform: translate3d(-50%, -50%, 0);
+}
+
+.modal-work__content{
+width: 46%;
+padding: 2.2222rem;
+
+@media @tablet{
+    padding: 1.9444rem;
+}
+
+@media @tabletsm{
+    padding: 1.6667rem;
+}
+
+@media @surface{
+    padding: 1rem;
+}
+
+@media @smartphonesm{
+    width: 100%;
+
+}
+
+}
+
+p{
+    line-height: .7222rem;
+}
+
+.modal_txt{
+    font-size: 1rem;
+
+    @media @smartphone{
+        font-size: 0.8889rem;
+    }
+}
+
+.modal-work__header{
+    margin-bottom: 1rem;
+    font-size: 2.7778rem;
+    text-transform: uppercase;   
+    
+    @media @tabletsm{
+        margin-bottom: 1.1111rem;
+        font-size: 2.22222rem;
+    }
+
+    @media @smartphone{
+        margin-bottom: 0.8889rem;
+        font-size: 2.2222rem;
+    }
+
+    @media @surface{
+        font-size: 1.6667rem;
+    }
+
+}
+
+
+.modal-work__color{
+    margin: .7222rem 0;  
+}

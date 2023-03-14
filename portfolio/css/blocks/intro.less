@@ -1,0 +1,158 @@
+// main: ../style.less
+
+.intro {
+    padding-top: 5.5556rem;
+   
+    @media @tablet {
+        padding-top: 5rem; /*отсутп сверху*/
+    }
+
+
+}
+
+.intro__inner {
+    display: flex;
+    padding-top: 2.7778rem; /*отсутп сверху*/
+    padding-bottom: 3,3333rem;
+    position: relative;
+
+    @media @tablet {
+        flex-wrap: wrap;
+        padding-top: 2rem; /*отсутп сверху*/
+    }
+
+    @media @smartphone{
+        padding-top: 1.9998rem; /*отсутп сверху*/
+    }
+
+    @media @smartphonesm{
+        padding-top: 1rem; /*отсутп сверху*/
+    }
+
+}
+
+.intro__content {    
+    width: 50%;
+
+    @media @smartphone{
+        width: 100%;
+        text-align: center;
+    }
+
+    @media @tphone{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+.Ill{
+    position: absolute;
+    z-index: -1;
+    width: 38.6667rem;
+    height: auto;
+
+    @media @desktop {
+        width: 33.333rem;
+        height: auto;
+    }
+
+    @media @tablet {
+        width: 25rem;
+        height: auto;
+    }
+
+    @media @tabletsm{
+        width: 22.222rem;
+        height: auto;
+    }
+
+    @media @smartphone {
+        display: none;        
+    }
+
+}
+
+.Lamp{
+    position: absolute;
+    z-index: 2;
+    width: 38.6667rem;
+    height: auto;
+
+    @media @desktop {
+        width: 33.333rem;
+        height: auto;
+    }
+
+    @media @tablet {
+        width: 25rem;
+        height: auto;
+    }
+
+    @media @tabletsm{
+        width: 22.222rem;
+        height: auto;
+    }
+
+
+    @media @smartphone {
+        display: none;        
+    }
+}
+
+.intro__subtitle {
+font-family: "Lato Regular";
+text-transform: uppercase;
+letter-spacing: 1px;
+font-size: 2.5rem;
+margin: 2.5rem 0;
+color: @grey;
+-webkit-text-stroke: 2px @black;
+
+    @media @desktop{
+        font-size: 2rem;
+        margin-bottom: 1.9444rem;
+    }
+
+    @media @tablet{
+        font-size: 1.5rem;
+        -webkit-text-stroke: 1.5px @black;
+    }
+
+    @media @smartphonesm{
+        font-size: 1.1111rem;
+        margin-bottom: 20px;
+        -webkit-text-stroke: 1px @black;
+    }
+    
+    @media @smartphonesmo{
+        font-size: 1.1111rem;
+    }
+}
+
+.intro__txt {
+margin-bottom: 45px;
+font-size: 1rem;
+color: @black;
+
+@media @desktop{
+    margin-bottom: 35px;
+}
+
+@media @smartphonesm{
+    margin-bottom: 0;   
+    font-size: 0.7222rem;
+}
+
+
+}

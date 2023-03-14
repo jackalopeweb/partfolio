@@ -1,0 +1,26 @@
+// main: ../style.less
+
+.social {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18em;
+}
+
+.social__link {
+    text-decoration: none;
+    margin-right: 1.3889rem;
+    transition: transform .2s
+    linear;
+
+    @media @smartphonesm{
+        display: none;
+    }
+}
+
+.social__link:hover {
+    transform: 
+    translateY(-5px);
+}

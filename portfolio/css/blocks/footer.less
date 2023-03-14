@@ -1,0 +1,71 @@
+// main: ../style.less
+
+.footer{
+    flex: 0 0 auto;
+    margin-top: auto;
+    bottom: 0;
+    width:100%;
+    padding: 1rem 0;
+    background-color: #52A486;
+    
+}
+
+.footer__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer__credits{
+    display: flex;
+    align-items: center;
+    
+    @media @smartphonesm{
+        width: 100%;
+        justify-content: center;
+        margin:  0 0 0.8888rem 0.4444rem;
+    }
+}
+
+.footer__copyright{
+    padding-right: 0.8rem;
+    margin-right: 1rem;
+
+    font-size: 0.8125rem;
+    color: @grey;
+
+    @media @smartphonesm{
+        padding-right: 0;
+        margin-right: 0.555rem;
+    }
+}
+
+.footer__social{
+display: flex;
+align-items: center;
+    
+    a{
+    margin: 0 0.55rem 0 0.55rem;
+    text-decoration: none;
+    }
+
+    @media @smartphonesm{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+.social__linkgr {
+    text-decoration: none;
+    margin-right: 25px;
+    transition: transform .2s
+    linear;
+}
+
+.social__linkgr:hover {
+    transform: 
+    translateY(-3px);
+}

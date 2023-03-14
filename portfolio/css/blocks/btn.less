@@ -1,0 +1,88 @@
+// main: ../style.less
+
+
+.btn {
+    display: inline-flex ;
+    padding: 0.9444rem 3.3333rem 1.1111rem 3.3333rem;
+    margin-left: 27%;
+    text-decoration: none;
+
+    border: none;
+    border-radius: 0px 500px 0px 500px;
+    background-color: @grey;
+    outline: none;
+    box-shadow: 0px 0px  5px @black, 
+    0px 0px  15px @black,
+    0px 0px  20px @black;
+
+
+    font-family: inherit; //наследуем у родителя
+    font-size: 2.0556rem;
+    line-height: 1.1;
+    color: @black;
+
+    transition: background-color .2s linear, 
+    color .2s linear, box-shadow .2s linear;
+
+    @media @desktop{
+        margin-left: 18%;
+    }
+
+     @media @tablet{
+        padding: 0.7778rem 3.0556rem 1rem 3.0556rem;
+        font-size: 1.5556rem;
+
+    }
+
+    @media @smartphone{
+        padding: 0.7778rem 3rem;
+        margin-left: 0;
+        font-size: 1.1111rem;
+    }
+
+    @media @smartphonesm{
+        padding: 0.7778rem 2.5rem;
+        margin-left: 0;
+        font-size: 1rem;
+      }
+
+}
+
+.btn:hover {
+    background-color: @black;
+    box-shadow: none;
+    color: @grey;
+}
+
+/*mod*/
+
+
+.btnsm {
+    display: inline-flex ;
+    padding: 1.17em 2.8em;
+    margin-left: 45%;
+    text-decoration: none;
+
+    border: none;
+    border-radius: 0px 500px 0px 500px;
+    background-color: @grey;
+    outline: none;
+    box-shadow: 0px 0px  5px @black, 
+    0px 0px  15px @black,
+    0px 0px  20px @black;
+
+
+    font-family: inherit; //наследуем у родителя
+    font-size: 1rem;
+    line-height: 1.1;
+    color: @black;
+
+    transition: background-color .2s linear, 
+    color .2s linear, box-shadow .2s linear;
+}
+
+.btnsm:hover {
+    background-color: @black;
+    box-shadow: none;
+    color: @grey;
+}

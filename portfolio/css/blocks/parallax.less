@@ -1,0 +1,142 @@
+// main: ../style.less
+  
+.PS {
+    position: absolute;
+    top: 5rem;
+    right: 11rem;
+    width: 5.2222rem;
+    height: auto;
+
+    @media @desktop {
+        top: 4rem;    
+        right: 12rem;
+        width: 4.7222rem;
+        height: auto;    
+    }
+
+    @media @pr1{
+        right: 10rem;
+    }
+
+    @media @tablet {
+        top: 3rem;
+        width: 4.1667rem;
+        height: auto;    
+    }
+
+    @media @pr1{
+        right: 8rem;
+    }
+
+    @media @tabletsm{
+        top: 3rem;
+        right: 7rem;
+        width: 3.3333rem;
+        height: auto;  
+    }
+
+    @media @smartphone {
+        display: none;        
+    }
+
+}
+
+.FIG {
+    position: absolute;
+    top: 13rem;
+    right: 21rem;
+    width: 5.2222rem;
+    height: auto;
+
+    @media @desktop {
+        right: 21rem;
+        width: 4.7222rem;
+        height: auto;
+    }
+
+    @media @pr1{
+        right: 19rem;
+    }
+
+
+    @media @tablet{
+        top: 10rem;
+        right: 16rem;
+        width: 4.1667rem;
+        height: auto;
+    }
+
+    @media @pr2{
+        right: 14rem;
+    }
+
+    @media @tabletsm{
+        top: 9rem;
+        right: 13rem;
+        width: 3.3333rem;
+        height: auto;  
+    }
+
+    @media @smartphone{
+        display: none;
+    }
+
+}
+
+.AI {
+    position: absolute;
+    top: 20rem;
+    right: 13rem;
+    width: 5.2222rem;
+    height: auto;
+
+    @media @desktop {
+        top: 18rem;
+        right: 13rem;
+        width: 4.7222rem;
+        height: auto;
+    }
+
+    @media @pr1{
+        right: 10rem;
+    }
+
+
+    @media @tablet{
+        top: 15rem;
+        width: 4.1667rem;
+        height: auto;
+    }
+
+    @media @pr2{
+        right: 8rem;
+    }
+
+    @media @tabletsm{
+        top: 12rem;
+        right: 7rem;
+        width: 3.3333rem;
+        height: auto;  
+    }
+
+    @media @smartphone{
+        display: none;
+    }
+
+}
+
+
+ 
+  // parallax-styles
+  
+  .parallax {
+    width: 100%;
+    min-height: 10rem;
+    position: relative;
+    
+
+  }
+  
+  .parallax__layer {
+    transition: transform 0.3s linear;
+  }
